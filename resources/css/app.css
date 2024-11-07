@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Default gradient (for dark mode) */
+.gradient-text {
+    background: linear-gradient(to right, #4ade80, #3b82f6, #9333ea); /* Green to Blue to Purple */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Light mode gradient */
+html[data-theme='light'] .light-gradient {
+    background: linear-gradient(to right, #fca5a5, #fbbf24, #86efac); /* Red to Yellow to Green */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%; /* Each item takes full width */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.mynavbar {
+    position: sticky;
+    top: 0; /* Stick to the top */
+    z-index: 10; /* Ensure it appears above other content */
+    transition: transform 0.3s ease; /* Smooth transition for hiding/showing */
+}
+
+.mynavbar {
+    backdrop-filter: blur(15px); /* Adjust the blur amount as needed */
+     /* Semi-transparent background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease; /* Smooth transitions */
+}
+
+
+#google_translate_element {
+    display: none;
+}
+
+iframe.goog-te-banner-frame {
+    display: none !important;
+}
+
+.goog-logo-link {
+    display: none !important;
+}
+
+.goog-te-gadget {
+    font-size: 0;
+}
