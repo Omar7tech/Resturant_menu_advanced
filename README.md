@@ -1,6 +1,6 @@
 
 
-# Laravel Admin Dashboard with Product and Category Management
+# 🔵Laravel Admin Dashboard with Product and Category Management
 
 ## Overview
 This project is a comprehensive Laravel application designed to manage products, categories, and application-wide settings. The admin dashboard offers powerful tools to control various aspects of the application, including authentication, dynamic settings, and an intuitive interface powered by modern web development technologies.
